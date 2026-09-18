@@ -11,15 +11,15 @@ Teaching assistant: Dimitrios Xynos (dimitrios.xynos@chem.uzh.ch)
 Throughout this course, you will need your personal computer, please bring it to every session. You will use several tools, which have to be installed on your PC (if you have done the DSA101, you might already know some of them). We highly recommend to have your computer set up appropriately before the first lecture:
 
 1) Git/Github: Make sure you have Git installed and a GitHub account. 
-2) We will use the package manager uv and its virtual environment (https://docs.astral.sh/uv/). Follow the instructions on the website to install uv. In some cases (on Windows), you will get an error about an ExecutionPolicy. In order to remedy that, open a Power Shell Terminal as administrator and `Set-ExecutionPolicy -ExecutionPolicy Unrestriced -Scope LocalMachine`. Find out more here: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.5.
-3) IDE: For running code and Jupyter notebooks and for facilitating version control, we will be using an IDE. All demonstration will be done in Visual Studio Code, but other development environments, such as Pycharm, work as well. Whatever IDE you are using, make sure that you keep it and its extensions (e.g. for Jupyter) up to date and that you are familiar with the working environment.
+2) We will use the package manager uv and its virtual environment (https://docs.astral.sh/uv/). Follow the instructions on the website to install uv. In some cases (on Windows), you will get an error about an ExecutionPolicy. In order to remedy that, open a Power Shell Terminal as administrator and `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine`. Find out more here: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.5.
+3) IDE: For running code and Jupyter notebooks and for facilitating version control, we will be using an IDE. All demonstration will be done in Visual Studio Code, but other development environments, such as Pycharm, work as well. Whatever IDE you are using, make sure that you keep it and its extensions (e.g. for Jupyter and Python) up to date and that you are familiar with the working environment. **In VSCode, you will need extensions for Jupyter and Python installed!**
 
 If anything else is going to be required, you will be notified in due course.
 
 ## How to work with this repository
 The initial steps:
 1) Fork the repository using the Fork button on GitHub.
-2) Clone your fork.
+2) Clone your fork. Please note that folders linked to cloud storage (e.g. OneDrive) can potentially cause issues with the paths. If you experience any warnings or errors in this direction, we recommend moving the files outside of the cloud environment.
 3) Create a virtual environment, by running `uv venv` in the terminal (in the IDE).
 4) Activate the virtual environment via the terminal (on Windows: `.venv\Scripts\activate`, on Linux/Mac: `source .venv/bin/activate`).
 5) Run the command `uv sync` to synchronize the environment with the provided lock file. Any missing dependencies will be thereby installed.
